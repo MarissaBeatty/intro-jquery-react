@@ -102,7 +102,7 @@ header a {
     width: 50px;
     height: 50px;
     border: 5px solid #fff;
-    border-top-color: #FFF0F5;
+    border-top-color: rgb(255, 182, 193);
     border-radius: 100%;
     margin-top: 500px;
     animation: round 1s linear infinite;
