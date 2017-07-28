@@ -1,3 +1,4 @@
+//this is a reference solution 
 (function() {
   var DARKSKY_API_URL = 'https://api.darksky.net/forecast/';
   var DARKSKY_API_KEY = 'd28ab0f9b42fc84d1f68799a4c8119fa';

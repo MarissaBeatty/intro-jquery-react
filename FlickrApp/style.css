@@ -1,0 +1,114 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        rgba(255, 182, 193, 1), 
+        rgba(255, 182, 193, 0.5)
+        ),
+        url(imgs/mountains.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 625px;
+    color: white;
+    margin: none;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 8rem;
+    text-decoration: none
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.main-app {
+    height: 1000px;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 50px;
+}
+
+.search-input {
+    width: 40%;
+    height: 4rem;
+    padding: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    outline: none;
+    border-radius: 12px;
+    border: none;
+    background-color: #FFB6C1;
+}
+
+.search-input::placeholder {
+    color: #FFF0F5;
+}
+
+.searchButton {
+    width: 42%;
+    height: 4rem;
+    padding: 10px 20px 10px 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.flickr-photos {
+    display: flex;
+    flex-direction: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flickr-photos img {
+    border-radius: 20px;
+    margin: 25px;
+}
+
+/* loader */
+
+#overlay {
+    height: 100%;
+    width:100%;
+    background: rgba(0,0,0, .8);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content:center;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #fff;
+    border-top-color: #FFF0F5;
+    border-radius: 100%;
+    margin-top: 500px;
+    animation: round 1s linear infinite;
+}
+    
+    @keyframes round {
+        from{transform: rotate(0deg)}
+        to {transform: rotate(360deg)}
+    }

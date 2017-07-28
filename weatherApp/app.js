@@ -9,7 +9,7 @@
   
   // This function returns a promise that will resolve with an object of lat/lng coordinates
   function getCoordinatesForCity(cityName) {
-    // This is an ES6 template string, much better than verbose string concatenation...
+    // This is an ES6 template string
     var url = `${GOOGLE_MAPS_API_URL}?address=${cityName}&key=${GOOGLE_MAPS_API_KEY}`;
   
     return (
