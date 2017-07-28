@@ -39,10 +39,10 @@
     getCoordinatesForCity(city)
     .then(getCurrentWeather)
     .then(function(weather) {
-      cityWeather.innerText = 'Woof! ' + weather.icon +  ' today. Grr.' + "\n"
-      + 'The temperature is ' + weather.temperature + ',' + "\n"
-      + 'but it feels like ' + weather.apparentTemperature + '.' + "\n" + "\n"
-      + 'Are you still gonna walk me?' + "\uD83D\uDC36";
+      $('.city-weather').text('Woof! ' + weather.icon +  ' today. Grr.' + "\n"
+        + 'The temperature is ' + weather.temperature + ',' + "\n"
+        + 'but it feels like ' + weather.apparentTemperature + '.' + "\n" + "\n"
+        + 'Are you still gonna walk me?' + "\uD83D\uDC36");
     })
   })
 }) ();
